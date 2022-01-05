@@ -9,6 +9,7 @@
  	PhoneDao phoneDao = new PhoneDao();
  	List<PersonVo> personList = phoneDao.getPersonList();
  %>
+ 
 <!DOCTYPE html>
 <html>
 <head>
@@ -39,6 +40,10 @@
 					<td>회사(company)</td>
 					<td><%=personList.get(i).getCompany()%></td>
 				</tr>
+				<tr>
+					<td><a href="./updateForm.jsp?id=<%= personList.get(i).getPersonId() %>">[수정]</a></td>
+					<td><a href="./delete.jsp?id=<%= personList.get(i).getPersonId() %>">[삭제]</a></td>
+				</tr>
 			
 			</table>
 			<br>
@@ -48,5 +53,7 @@
 		%>
 		
 		<a href="http://localhost:8088/phonebook1/writeForm.jsp">전화번호 등록폼</a>
+		<a href="./writeForm.jsp">전화번호 등록폼(주소수정)</a>
 </body>
 </html>
+
