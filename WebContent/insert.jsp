@@ -31,6 +31,7 @@
 	phoneDao.personInsert(personVo); 
 	
 	//전체리스트를 가져온다
+	//등록,삭제할때는 새로 입력한 정보만 쓰니까 db에 있는 데이터를 가져올 필요 없어 생략함
 	//List<PersonVo> personList = phoneDao.getPersonList();
 	//html하고 섞는다
 	
