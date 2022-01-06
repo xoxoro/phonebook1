@@ -26,6 +26,7 @@
 		</p>
 		
 		<%//수정폼을 update.jsp서버에 전송한다%>
+		<%//수정을 눌렀을때 내가 선택한 코드값에 해당되는 데이터가 들어가있어야함 겟펄슨을 받아서 updateForm.jsp?id=1이런식으로 만들어지게함%>
 		<form action="./update.jsp" method="get">
 		이름(name): <input type="text" name="name" value="<%=phoneDao.getPerson(id).getName()%>"><br>
 		핸드폰(hp): <input type="text" name="hp" value="<%=phoneDao.getPerson(id).getHp() %>"><br>
