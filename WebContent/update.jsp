@@ -3,7 +3,6 @@
 <%@ page import="com.javaex.dao.PhoneDao" %>
 <%@ page import="java.util.List" %>
 <%
-
 	//PhonDao를 메모리에 올린다
 	PhoneDao phoneDao = new PhoneDao();
 	
@@ -19,10 +18,10 @@
 	String company = request.getParameter("company");
 	
 	//테스트
-	System.out.println(id);
-	System.out.println(name);
-	System.out.println(hp);
-	System.out.println(company);
+	//System.out.println(id);
+	//System.out.println(name);
+	//System.out.println(hp);
+	//System.out.println(company);
 	
 	//전송된 값(파라미터)을 vo객체로 만든다
 	PersonVo personVo = new PersonVo(id, name, hp, company);
@@ -36,3 +35,13 @@
 	//리다이렉트
 	response.sendRedirect("./list.jsp");
 %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>

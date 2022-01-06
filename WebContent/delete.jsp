@@ -3,15 +3,21 @@
 <%@ page import="com.javaex.dao.PhoneDao" %>
 <%@ page import="java.util.List" %>
 <%
-
 	int personId = Integer.parseInt(request.getParameter("id"));
 	
 	//PhoneDao를 메모리에 올린다.
 	PhoneDao phoneDao = new PhoneDao();
 	phoneDao.personDelete(personId);
-
 	//리다이렉트(이동하고자하는 주소넣기)
 	response.sendRedirect("./list.jsp");
 	
-	
 %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+</body>
+</html>
