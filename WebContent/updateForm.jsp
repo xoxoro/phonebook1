@@ -6,6 +6,7 @@
 <%
 	PhoneDao phoneDao = new PhoneDao();
 	int id = Integer.parseInt(request.getParameter("id"));
+	//리퀘스트안에 겟파라미터있음-->요청에 파라미터저장
 
 %>
 
