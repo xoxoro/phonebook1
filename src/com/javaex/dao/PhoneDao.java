@@ -210,7 +210,7 @@ public class PhoneDao {
 	  // 사람 1명정보만 가져올때
 	   public PersonVo getPerson(int personId) {
 	      PersonVo personVo = null;
-	      
+	     
 	      getConnection();
 
 	      try {
@@ -239,7 +239,7 @@ public class PhoneDao {
 	            String company = rs.getString("company");
 
 	            personVo = new PersonVo(id, name, hp, company);
-	         
+	            //처리 실패했을때 없는값이라도 들어갈수있게 위에서 null값 넣어줌
 
 	      } catch (SQLException e) {
 	         System.out.println("error:" + e);
