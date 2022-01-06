@@ -3,7 +3,7 @@
 <%@ page import="com.javaex.dao.PhoneDao" %>
 <%@ page import="java.util.List" %>
 <%
-	int personId = Integer.parseInt(request.getParameter("id"));
+	int personId = Integer.parseInt(request.getParameter("id"));//id는 프라이머리키값
 	
 	//PhoneDao를 메모리에 올린다.
 	PhoneDao phoneDao = new PhoneDao();
