@@ -26,7 +26,7 @@
 	//전송된 값(파라미터)을 vo객체로 만든다
 	PersonVo personVo = new PersonVo(id, name, hp, company);
 	
-	//저장
+	//수정
 	phoneDao.personUpdate(personVo);
 	
 	//전체리스트를 가져온다
