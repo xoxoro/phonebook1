@@ -9,6 +9,7 @@
 	PhoneDao phoneDao = new PhoneDao();
 	phoneDao.personDelete(personId);
 	//리다이렉트(이동하고자하는 주소넣기)
+	//삭제 후 빈화면에 리다이렉트 실행시켜서 리스트로 돌아감
 	response.sendRedirect("./list.jsp");
 	
 %>
